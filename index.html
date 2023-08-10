@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f482f8941e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Certifications</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars"onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Science Grad Student</p>
+            <h1> Hi, I'm <span>Veda Nair</span>.</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a data science graduate student at Stony Brook University, New York with two years of experience as an ML engineer at Accenture Applied Intelligence, specializing in designing and optimizing data ingestion and curation pipelines and building ML models using Microsoft Azure. Throughout my journey, I've been captivated by the power of data and its potential to transform businesses. With a strong foundation in statistics and machine learning, I've successfully built end-to-end solutions that collect, process, and curate large-scale datasets, ensuring data integrity and enabling data-driven decision-making by  and derieving meaningful insights from them. My passion for data science drives me to continuously explore new challenges and stay up-to-date with the latest advancements in the field. Let's connect and explore the exciting world of data together!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>Python(Pandas, NumPy, SciKit-Learn, Matplotlib, Seaborn, SciPy, NLTK, TensorFlow,XGBoost), R, MATLAB, Java</li>
+                        <li><span>Statistics and Machine Learning</span><br>Linear/Logistic regression, Support Vector Machine(SVM), kNN, K-Means, Random Forest, Gradient boosting algorithms(XGBoost, GBM)</li>
+                        <li><span>Cloud and Data visualization</span><br>Azure, PowerBI, Tabaleau</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="Experience">
+                    <ul>
+                        <li><span>Jun,2021-Jul,2023</span><br><span>ML Engineering analyst, Accenture Applied Intelligence</span><br>As an ML Engineer at Accenture, I had the exciting opportunity to work on a variety of projects that leveraged the power of Microsoft Azure's advanced technologies. Here's an overview of my work experience:<br><span>1. Data Ingestion and Curation Pipelines:</span><br> Designed and developed end-to-end data ingestion and curation pipelines using Azure Data Factory and Azure Data Lake Storage. These pipelines efficiently collected and processed large-scale datasets from diverse sources, ensuring data integrity and consistency.<br><span>2. Azure Cognitive Services Integration:</span><br>Integrated Azure Cognitive Services, such as Text Analytics and Computer Vision, into various applications for sentiment analysis, text recognition, and image classification. This enriched data insights and improved decision-making processes.<br><span>3.Big Data Analytics:</span><br>Worked on projects involving big data analytics using Azure Databricks. Leveraged distributed computing capabilities to process and analyze vast amounts of data, enabling data-driven insights for clients. </li>
+                        <li><span>Feb,2021-Jun,2021</span><br><span>Project Intern, Collins Aerospace</span><br>As a project intern, I had the opportunity to work on the developement of a data migration and verification tool using python. The tool was aimed at reducing the time taken to verify the data generated from different software testing tools and migrate the same data to cloud. The tool reduced the time taken for verification and reduced errors by upto 70%.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="Education">
+                    <ul>
+                        <li><span>Aug,2023-Present</span><br>MS in Data Science, Stony Brook University</li>
+                        <li><span>Jul,2017-Jun,2021</span><br>Bachelor in Technology(Electrical and electronics engineering), Vellore Institute of Technology, Vellore, India<br>GPA: 8.29/10</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-microsoft"></i>
+                <h2>AI-900: Microsoft Azure AI Fundamentals</h2>
+                <p>The AI-900 exam, also known as the Microsoft Azure AI Fundamentals exam, is a certification exam designed to assess foundational knowledge of artificial intelligence (AI) and machine learning concepts within the context of Microsoft Azure services.</p>
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/VedaNair-1188/E0E6EED6B3FD0E68?sharingId=C40799907C44FF15">View credential</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-microsoft"></i>
+                <h2>DP-900: Microsoft Azure Data Fundamentals</h2>
+                <p>The DP-900 exam, also known as the Microsoft Azure Data Fundamentals exam, is a certification exam that evaluates fundamental knowledge of data concepts and core data services on the Microsoft Azure cloud platform. The exam covers essential data-related topics, including data storage options, data processing technologies, data security, and data visualization. </p>
+                <a href="https://learn.microsoft.com/api/credentials/share/en-us/VedaNair-1188/3BA062B70216A192?sharingId=C40799907C44FF15">View credential</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-microsoft"></i>
+                <h2>DP-100: Designing and Implementing a Data Science Solution on Azure</h2>
+                <p>The DP-100 exam, also known as the Designing and Implementing a Data Science Solution on Azure exam, is a certification exam that assesses the skills and knowledge required to design and implement end-to-end data science solutions using Microsoft Azure services. The exam covers topics such as data exploration, data preparation, model development, model training, and model deployment on the Azure cloud platform.</p>
+                <a href="#">View credential</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------Portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/project-1.jpeg">
+                <div class="layer">
+                    <h3>Formula 1 Predictor</h3>
+                    <p>I have been a fan of Formula 1 since I was a kid. As a passionate fan of the sport, I thought it would be interesting to predict the likelihood of a certain driver to win a Grand Prix and compare it to the bookmakers’ odds. This project has been divided into three sections: data collection, data analysis and ML modeling. Data was gathered from two sources: the Ergast F1 data repository and the official Formula 1 website. A basic data analysis about the safety of the tracks, significance of pole position etc was done. For predicting the final results of the race, I used both regression and classification methods. </p>
+                    <a href="https://github.com/veda-nair/formula_one_predictor"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project 2 final.jpg">
+                <div class="layer">
+                    <h3>E-commerce sentiment analysis</h3>
+                    <p>This project is about exploring topic modelings and unsupervised machine learning by analyzing e-commerce clothings reviews. I have used Natural Language Processing (NLP) and Unsupervised Machine Learning for topic Modeling and “separation” of good and bad reviews using clustering. The dataset used is a women clothings dataset of a real e-commerce business.</p>
+                    <a href="https://github.com/veda-nair/ecommerce_sentiment_analysis"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/project-3-final.jpg">
+                <div class="layer">
+                    <h3>Clustering of news headlines in India</h3>
+                    <p>In this project, I have used k-means clustering and vectorization to create clusters of news headlines. The dataset is a persistent historical archive of noteable events in the Indian subcontinent from start-2001 to q1-2022, recorded in real-time by the journalists of India. It contains approximately 3.6 million events published by Times of India. A majority of the data is focusing on Indian local news including national, city level and entertainment.</p>
+                    <a href="https://github.com/veda-nair/k-means-india-headlines"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div> 
+        <a href="https://github.com/veda-nair"class="btn">See more</a>
+    </div>
+</div>
+
+<!-----contact-->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> veda.nair09@gmail.com</p>
+                <p><i class="fa-sharp fa-solid fa-phone"></i> +91-8971237580</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/veda-nair"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/veda-nair"><i class="fa-brands fa-github"></i></a>
+                </div>  
+                <a href="images/veda-nair-cv.pdf" download class="btn btn2">Download CV</a>     
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p><i class="fa-solid fa-copyright"></i> Copyright Veda Nair</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu=document.getElementById(sidemenu)
+    function openmenu(){
+        sidemenu.style.right="0"
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px"
+    }
+</script>
+<form name="submit-to-google-sheet">
+  </form>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwVYnosdorpJ7NVP0Hmo_oOca8ebcCpvS8E7mc8Hyh-zbjDzV1cnCoMt94W-4St1N5N/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent!"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
